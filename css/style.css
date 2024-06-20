@@ -1,0 +1,137 @@
+
+html{
+    scroll-padding-top:68px;
+}
+h1,h2,h3,h4,h5,h6,p{
+    font-family: "Nunito Sans", sans-serif;
+}
+/*start header*/
+header{
+    background-image: url('../img/hero-bg-light.webp');
+    background-position: center;
+    background-size: cover;
+}
+.navbar img{
+    width: 35px;
+    height: 35px;
+}
+.bg-body-tertiary {
+    --bs-bg-opacity: 1;
+    background-color: rgba(255, 255, 255) !important;
+}
+.nav-link:active{
+    color:#77bcca;
+}
+.img-container img{
+    height: 550px !important;
+}
+@media (max-width:1000px) {
+    .img-container img{
+        height: 1500px !important;
+    }
+}
+.layer{
+    background-color: rgba(255, 255, 255, 0.6);
+}
+/*end header*/
+/*start extra section*/
+.extra{
+   background-color:  rgb(56, 141, 168,0.2);
+}
+.extra-content>div{
+    width: 33.3%;
+}
+/*end extra section*/
+/*start sponser*/
+.sponsers div img{
+-webkit-filter:grayscale(100%);
+        filter:grayscale(100%);
+cursor: pointer;
+-webkit-transition: -webkit-filter 0.2s;
+transition: -webkit-filter 0.2s;
+-o-transition: filter 0.2s;
+transition: filter 0.2s;
+transition: filter 0.2s, -webkit-filter 0.2s;
+}
+.sponsers div img:hover{
+    -webkit-filter:grayscale(0%);
+            filter:grayscale(0%);
+ }
+ /*end sponser*/
+/*start Features*/
+.features-head h1{
+    letter-spacing: 1px;
+}
+.features-head h1::after{
+    content:'';
+    position: absolute;
+    width:55px;
+    background-color: #77bcca;
+    height: 5px;
+    bottom: -10px;
+    left: 48%;
+}
+@media (max-width:600px) {
+    .features-head h1::after{
+
+        left: 43%;    
+    }
+}
+.tab-content img{
+    height: 400px;
+}
+@media (max-width:1000px){
+    .tab-content img{
+        display: none;
+    }
+    #full{
+        width: 100% !important;
+    }
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: var(--bs-nav-pills-link-active-color);
+    background-color: #77bcca;
+}
+/*end fearures*/
+/*start Testemonial*/
+.testemonial{
+    background-color: #d0d8d9; 
+}
+.Testemoial-head h1{
+    letter-spacing: 1px;
+}
+.Testemoial-head h1::after{
+    content:'';
+    position: absolute;
+    width:55px;
+    background-color: #77bcca;
+    height: 5px;
+    bottom: -10px;
+    left: 48%;    
+}
+@media (max-width:600px) {
+    .Testemoial-head h1::after{
+
+        left: 43%;    
+    }
+}
+.test i{
+    color: gold;
+}
+.test img{
+    width: 70px;
+    height: 70px;
+}
+/*end Testemonial*/
+/*start contact*/
+.contact h1::after{
+    content:'';
+    position: absolute;
+    width:55px;
+    background-color: #77bcca;
+    height: 5px;
+    bottom: -10px;
+    left: 48%;    
+}
+/*end contact*/
